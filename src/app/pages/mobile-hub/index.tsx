@@ -186,9 +186,9 @@ export default function MobileHubPage() {
 
   return (
     <Page title="Mobile Hub">
-      <div className="mx-auto min-h-screen w-full max-w-md bg-gray-100 pb-[calc(env(safe-area-inset-bottom)+5.25rem)] dark:bg-dark-900">
-        <div className="sticky top-0 z-10 border-b border-gray-200/70 bg-white/95 px-4 pt-[calc(env(safe-area-inset-top)+0.625rem)] pb-2.5 backdrop-blur-sm dark:border-dark-600 dark:bg-dark-800/90">
-          <div className="flex min-h-11 items-center justify-between gap-3">
+      <div className="mx-auto min-h-screen w-full max-w-md bg-gray-100 pb-[calc(env(safe-area-inset-bottom)+4rem)] dark:bg-dark-900">
+        <div className="sticky top-0 z-10 border-b border-gray-200/70 bg-white/95 px-4 pt-[calc(env(safe-area-inset-top)+0.5rem)] pb-2 backdrop-blur-sm dark:border-dark-600 dark:bg-dark-800/90">
+          <div className="flex min-h-10 items-center justify-between gap-3">
             <div className="flex min-w-0 items-center gap-3">
               <Avatar size={12} initialColor={activeApp.color}>
                 <ActiveAppIcon className="size-5" />
@@ -288,7 +288,7 @@ export default function MobileHubPage() {
           )}
         </main>
 
-        <nav className="fixed inset-x-0 bottom-0 z-20 mx-auto flex h-[calc(3.75rem+env(safe-area-inset-bottom))] w-full max-w-md items-stretch gap-0.5 border-t border-gray-200 bg-white/95 px-1.5 pb-[calc(env(safe-area-inset-bottom)+0.375rem)] pt-1.5 backdrop-blur-sm dark:border-dark-600 dark:bg-dark-800/95">
+        <nav className="fixed inset-x-0 bottom-0 z-20 mx-auto flex h-[calc(3.25rem+env(safe-area-inset-bottom))] w-full max-w-md items-stretch gap-0.5 border-t border-gray-200 bg-white/95 px-1 pb-[calc(env(safe-area-inset-bottom)+0.25rem)] pt-1 backdrop-blur-sm dark:border-dark-600 dark:bg-dark-800/95">
           {bottomTabs.map((tab) => {
             const isActive = currentTabKey === tab.key;
             const TabIcon = iconMap[tab.icon];
@@ -298,21 +298,21 @@ export default function MobileHubPage() {
                 type="button"
                 key={tab.key}
                 onClick={() => handleChangeTab(tab.key)}
-                className="flex min-h-11 min-w-0 flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1.5 text-center transition-colors"
+                className="flex min-h-10 min-w-0 flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-center transition-colors"
               >
                 <span
                   className={[
-                    "inline-flex size-7 items-center justify-center rounded-lg transition-colors",
+                    "inline-flex size-6 items-center justify-center rounded-lg transition-colors",
                     isActive
                       ? "bg-primary-500/15 text-primary-700 dark:text-primary-300"
                       : "text-gray-400 dark:text-dark-300",
                   ].join(" ")}
                 >
-                  <TabIcon className="size-4.5" />
+                  <TabIcon className="size-4" />
                 </span>
                 <span
                   className={[
-                    "text-tiny-plus font-medium leading-none",
+                    "text-tiny font-medium leading-none",
                     isActive
                       ? "text-primary-700 dark:text-primary-300"
                       : "text-gray-500 dark:text-dark-300",

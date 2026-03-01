@@ -1,0 +1,64 @@
+{
+  "name": "Mega Group - Workspace",
+  "short_name": "MegaApp",
+  "description": "Hệ thống quản lý tích hợp và không gian làm việc của Tập đoàn Mega",
+  "theme_color": "#3b82f6",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/mobile-hub",
+  "id": "vn.tanadaithanh.megaapp",
+  "icons": [
+    {
+      "src": "/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Mobile Hub",
+      "short_name": "Hub",
+      "description": "Mở Mobile Hub",
+      "url": "/mobile-hub",
+      "icons": [
+        {
+          "src": "/pwa/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Desktop Workspace",
+      "short_name": "Desktop",
+      "description": "Mở Desktop Workspace",
+      "url": "/desktop/home/overview",
+      "icons": [
+        {
+          "src": "/pwa/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
